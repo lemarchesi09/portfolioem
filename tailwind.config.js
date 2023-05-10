@@ -10,6 +10,9 @@ export default {
       primaryPink: '#EE7AF9',
       
 
+    },
+    fontFamily:{
+      ubuntu: ['Ubuntu']
     }
   },
   plugins: [],
