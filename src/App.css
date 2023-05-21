@@ -4,3 +4,14 @@
 .transparent{
     color: transparent;
 }
+
+@keyframes slider {
+    from {transform: translateX(20rem);}
+    to{ transform: translateX(0rem);}
+}
+
+.anim{
+    animation-name: slider;
+    animation-duration: 1s;
+    transition: all ease-in-out;
+}

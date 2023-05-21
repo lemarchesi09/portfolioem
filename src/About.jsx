@@ -33,11 +33,11 @@ function About() {
 
   return (
     <>
-      <section className=" bg-darkBg flex flex-col items-center py-[4.5rem] rounded-b-3xl relative z-40 -mt-10 ">
-        <h2 className=" text-primaryYellow">.about</h2>
+      <section className=" bg-darkBg flex flex-col items-center py-[4.5rem] rounded-b-3xl relative z-30 -mt-10 ">
+        <h2 className=" text-primaryYellow text-xl">.about</h2>
 
         {index == 1 && (
-          <div className="flex flex-col items-center w-full">
+          <div className="flex flex-col items-center w-full anim">
             <h3 className=" text-whiteBG pt-8">services:</h3>
             <div className="flex flex-wrap w-[90%] justify-center gap-8 pt-8">
               <ServiceCard source={MonitorIcon} title={"Web Development"} />
@@ -48,7 +48,7 @@ function About() {
         )}
 
         {index == 2 && (
-          <div className="flex flex-col items-center w-full">
+          <div className="flex flex-col items-center w-full anim">
             <h3 className=" text-whiteBG pt-8">education:</h3>
             <EducationCard
               title={"Full Stack Web"}
@@ -73,7 +73,7 @@ function About() {
           </div>
         )}
         {index == 3 && (
-          <div className="flex flex-col items-center w-full">
+          <div className="flex flex-col items-center w-full anim">
             <h3 className=" text-whiteBG pt-8">tools:</h3>
             <div className="flex flex-wrap gap-4 justify-center w-[75%] items-center py-8">
               <img src={FireIcon} alt="" />

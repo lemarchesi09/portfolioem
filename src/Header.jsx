@@ -1,7 +1,7 @@
 import imgHero from "./assets/img-hero.png";
 function Header() {
   return (
-    <header className="p-10 bg-whiteBG border-2 border-black border-t-0 rounded-b-3xl relative z-50">
+    <header className="p-10 bg-whiteBG border-2 border-black border-t-0 rounded-b-3xl relative z-40 mt-[4.5rem]">
       <div className="flex justify-center text-xl">
 
         <p

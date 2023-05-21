@@ -8,9 +8,9 @@ import ProjectCard from "./components/ProjectCard";
 import {Link} from 'react-router-dom'
 function Projects() {
   return (
-    <div className="p-10 flex flex-col items-center gap-8 bg-whiteBG border-2 border-black border-t-0 rounded-b-3xl relative z-30 py-[4.5rem]
+    <div className="p-10 flex flex-col items-center gap-8 bg-whiteBG border-2 border-black border-t-0 rounded-b-3xl relative z-20 py-[4.5rem]
     -mt-10">
-      <h2 className="text-primaryPink">. projects</h2>
+      <h2 className="text-primaryPink text-xl">. projects</h2>
 
       <ProjectCard title={'Proyect 1'} imgSrc={"https://www.freecodecamp.org/news/content/images/2020/07/weather-app-example.png"}/>
       <ProjectCard title={'Proyect 2'} imgSrc={"https://www.freecodecamp.org/news/content/images/2020/07/weather-app-example.png"}/>
