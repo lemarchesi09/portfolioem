@@ -4,25 +4,18 @@ import iconReact from "./assets/icon-react.svg";
 import iconTw from "./assets/icon-tw.svg";
 import ButtonGrad from "./components/ButtonGrad";
 import ButtonTp from "./components/ButtonTp";
+import ProjectCard from "./components/ProjectCard";
+import {Link} from 'react-router-dom'
 function Projects() {
   return (
-    <div className="p-10 bg-whiteBG border-2 border-black border-t-0 rounded-b-3xl relative z-50 py-[4.5rem]
+    <div className="p-10 flex flex-col items-center gap-8 bg-whiteBG border-2 border-black border-t-0 rounded-b-3xl relative z-30 py-[4.5rem]
     -mt-10">
-      <div className="project__card bg-darkBg flex flex-col justify-around items-center h-80 w-80 m-auto rounded-3xl p-4">
-        <img className="h-80 w-80 object-cover rounded-3xl p-4" src="https://www.freecodecamp.org/news/content/images/2020/07/weather-app-example.png" alt="" />
-        <p className=" text-whiteBG">Title</p>
-        <div className="project__card--buttons text-whiteBG flex justify-center gap-28 w-full">
-          <ButtonTp text={'Github'}/>
-          <ButtonGrad text={'Deploy'}/>
-          
-        </div>
-        <div className="flex justify-center gap-4 w-full">
-          <img src={iconJs} alt="" />
-          <img src={iconFb} alt="" />
-          <img src={iconReact} alt="" />
-          <img src={iconTw} alt="" />
-        </div>
-      </div>
+      <h2 className="text-primaryPink">. projects</h2>
+
+      <ProjectCard title={'Proyect 1'} imgSrc={"https://www.freecodecamp.org/news/content/images/2020/07/weather-app-example.png"}/>
+      <ProjectCard title={'Proyect 2'} imgSrc={"https://www.freecodecamp.org/news/content/images/2020/07/weather-app-example.png"}/>
+
+    <Link className=" text-primaryYellow" to={""}>See al projects</Link>
     </div>
   );
 }
